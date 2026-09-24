@@ -29,7 +29,7 @@ For the complete BSP build procedure, see:
 
 ## Validation
 
-After building the BSP and booting QNX on the ICO330, perform the required hardware and functional validation.
+After building the BSP and booting QNX on the IMB540, perform the required hardware and functional validation.
 
 The validation document covers the tested hardware functions and provides the corresponding test procedures and results.
 
