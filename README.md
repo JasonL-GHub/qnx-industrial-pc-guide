@@ -113,10 +113,10 @@ repository.
 
 | Platform | QNX SDP Version | Product Branch | Status |
 |:---:|:---:|:---:|:---:|
-| **IPC920** | 8.0.5 | `ipc920` | Available |
-| **MANO566** | 8.0.5 | `mano566` | Available |
-| **MANO560** | 8.0.3 | `mano560` | Available |
-| **ICO330** | 8.0.3 | `ico330` | Available |
+| **IPC920** | 8.0.5 | [`ipc920`](../../tree/ipc920) | Available |
+| **MANO566** | 8.0.5 | [`mano566`](../../tree/mano566) | Available |
+| **MANO560** | 8.0.3 | [`mano560`](../../tree/mano560) | Available |
+| **ICO330** | 8.0.3 | [`ico330`](../../tree/ico330)  | Available |
 
 
 
@@ -272,10 +272,10 @@ Each product branch contains the QNX BSP source code, build files, and engineeri
 
 | Product | QNX SDP Version | Branch |
 |:---:|:---:|:---:|
-| **IPC920** | 8.0.5 | `ipc920` |
-| **MANO566** | 8.0.5 | `mano566` |
-| **MANO560** | 8.0.3 | `mano560` |
-| **ICO330** | 8.0.3 | `ico330` |
+| **IPC920** | 8.0.5 | [`ipc920`](../../tree/ipc920) |
+| **MANO566** | 8.0.5 |  [`mano566`](../../tree/mano566) |
+| **MANO560** | 8.0.3 | [`mano560`](../../tree/mano560) |
+| **ICO330** | 8.0.3 | [`ico330`](../../tree/ico330)  |
 
 
 ### Documentation
@@ -481,7 +481,7 @@ The **Validation Guide** covers hardware functional testing and provides practic
 information about supported interfaces, configuration requirements, known limitations, 
 and troubleshooting considerations.
 
-Platform-specific build and validation guides are available in the docs/ directory
+Platform-specific build and validation guides are available in the `docs/` directory
 of each product branch.
 
 
