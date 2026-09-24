@@ -29,16 +29,20 @@
 
 ## Deploying QNX on Axiomtek Industrial PCs
 
----
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
 
-### A Practical Guide from BSP to Hardware Validation
 
-This guide provides engineers with practical guidance for deploying 
-**QNX® Software Systems** on **Axiomtek industrial computing platforms**.
+Deploying **QNX® Software Systems** on **Axiomtek industrial computing platforms** does not have to start from scratch.
 
-The goal is to reduce the time and effort required to bring up **QNX** on 
-**Axiomtek platforms**, enabling developers to focus on **real-time applications, 
-industrial automation, edge computing, and other application development**.
+This project provides **QNX BSP source code, build instructions, and hardware validation guides** for selected Axiomtek 
+industrial computing platforms. 
+
+The goal is to reduce the time and effort required to bring up **QNX** on **Axiomtek platforms**, enabling developers 
+to focus on **real-time applications, industrial automation, edge computing, and other application development**.
+
+
 
 
 > **Build it. Boot it. Validate it. Develop on it.**
@@ -50,11 +54,17 @@ industrial automation, edge computing, and other application development**.
 </p>
 
 
-
-
 ---
 
+
 ## The Challenge of Deploying QNX on Industrial Hardware
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
 
 QNX is increasingly used in **mission-critical industrial automation, edge AI, robotics, 
 and real-time systems**, where reliability, deterministic performance, and long-term 
@@ -75,13 +85,23 @@ engineers may not encounter with standard Linux systems:
     understanding licensing and evaluation options can add complexity for engineers 
     new to QNX.
 
+
+
 > **The result:** A platform that works out-of-the-box under Linux may still require 
   significant engineering effort to become fully functional and production-ready under 
   QNX.
 
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
 
 
 ### Why QNX-Ready Industrial Platforms Matter
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
 
 Validated **QNX BSPs for industrial PCs** can significantly reduce hardware bring-up 
 time and provide engineers with a practical starting point for QNX-based development.
@@ -101,46 +121,26 @@ computing platforms**.
 
 ## Supported Axiomtek Platforms
 
-This project provides **QNX BSP source code, build and deployment instructions, and 
-hardware validation guidance** for selected Axiomtek industrial computing platforms.
-
-Each supported platform is maintained in its own **Git branch**, containing the BSP source code and 
-platform-specific documentation.
-
-The following table summarizes the platforms and QNX SDP versions currently available in this 
-repository.
-
-
-| Platform | QNX SDP Version | Product Branch | Status |
-|:---:|:---:|:---:|:---:|
-| **IPC920** | 8.0.5 | `ipc920` | Available |
-| **MANO566** | 8.0.5 | `mano566` | Available |
-| **MANO560** | 8.0.3 | `mano560` | Available |
-| **ICO330** | 8.0.3 | `ico330` | Available |
-
-
-
-
 <p align="right">
   <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
 </p>
 
 
+The repository currently provides QNX BSP support for the following Axiomtek platforms:
 
+| Platform | QNX SDP Version | Product Branch | Status |
+|:---:|:---:|:---:|:---:|
+| **IPC920** | 8.0.5 | [`ipc920`](../../tree/ipc920) | Available |
+| **MANO566** | 8.0.5 | [`mano566`](../../tree/mano566) | Available |
+| **SHB160** | 8.0.5 | [`shb160`](../../tree/shb160) | Available |
+| **MANO560** | 8.0.3 | [`mano560`](../../tree/mano560) | Available |
+| **ICO330** | 8.0.3 | [`ico330`](../../tree/ico330) | Available |
+| **IMB540** | 8.0.3 | [`imb540`](../../tree/imb540) | Available |
+| **PICO338** | 8.0.3 | [`pico338`](../../tree/pico338) | Available |
+| **KIWI330** | 8.0.3 | [`kiwi330`](../../tree/kiwi330) | Available |
+| **CAPA322** | 8.0.0 | [`capa322`](../../tree/capa322) | Available |
 
-### What This Repository Provides
-
-Depending on the platform and QNX version, the product branch may include::
-
-- BSP source code and build configuration
-- BSP build and deployment instructions
-- Hardware and peripheral validation information
-- Known limitations and workarounds
-- Hardware-specific troubleshooting and debugging guidance
-
-Each product branch keeps the **BSP source code** and **platform-specific documentation** together, 
-making the branch a self-contained resource for the corresponding Axiomtek platform.
-
+Each product branch contains the BSP source code and the associated build and validation documentation.
 
 
 
@@ -152,6 +152,12 @@ making the branch a self-contained resource for the corresponding Axiomtek platf
 
 
 ### Axiomtek QNX-Supported Products
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
 
 The platforms documented in this repository are part of Axiomtek's broader portfolio of products with 
 QNX BSP support. Axiomtek maintains a dedicated QNX page that provides information about 
@@ -175,6 +181,15 @@ The Axiomtek QNX page provides the broader reference for Axiomtek's QNX-supporte
 
 ### Platform and BSP Considerations
 
+
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
+
 QNX support can vary depending on the **platform configuration, CPU generation, 
 PCB revision, BIOS/UEFI version, QNX release, and connected peripherals**. Always 
 verify the target hardware configuration before deploying a BSP.
@@ -194,6 +209,15 @@ customization may be required for different hardware revisions or configurations
 
 ### Platform Status
 
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
+
+
 - **Available** - BSP source and related information are available and have been 
   evaluated on the target platform.
 - **Development** - BSP support or hardware validation is currently in progress.
@@ -212,8 +236,15 @@ The goal of this project is to make QNX deployment on Axiomtek industrial platfo
 
 ## Repository Structure
 
-The repository is organized by **Axiomtek product branches**. Each product branch contains 
-the QNX BSP source code and engineering documentation for the corresponding platform.
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
+
+The repository uses a **branch-based structure**. The `main` branch contains the project overview and license, 
+while each Axiomtek product is maintained in its own Git branch.
 
 ```text
 qnx-industrial-pc-guide/
@@ -234,26 +265,45 @@ qnx-industrial-pc-guide/
 |   +-- manifest
 |   +-- source.xml
 |   +-- docs/
-|       +-- bsp-build-qnx-8.0.5-ipc920.md
-|       +-- validation-qnx-8.0.5-ipc920.md
 |
 +-- mano566
 |   +-- README.md
-|   +-- LICENSE.md
+|   +-- ...
+|
++-- shb160
+|   +-- README.md
 |   +-- ...
 |
 +-- mano560
 |   +-- README.md
-|   +-- LICENSE.md
 |   +-- ...
 |
 +-- ico330
+|   +-- README.md
+|   +-- ...
+|
++-- imb540
+|   +-- README.md
+|   +-- ...
+|
++-- pico338
+|   +-- README.md
+|   +-- ...
+|
++-- kiwi330
+|   +-- README.md
+|   +-- ...
+|
++-- capa322
     +-- README.md
-    +-- LICENSE.md
     +-- ...
 ```
 
-> **Note**: **ipc920**, **mano566**, **mano560**, and **ico330** are Git branches, not directories within the main branch.
+
+> **Note:** 
+> 
+> **ipc920**, **mano566**, **shb160**, **mano560**, **ico330**, **imb540**, **pico338**, **kiwi330**, and **capa322** are Git
+> branches, not directories within the main branch.
 
 
 
@@ -262,43 +312,19 @@ qnx-industrial-pc-guide/
 </p>
 
 
-
-
-
-### Product Branches
-
-Each product branch contains the QNX BSP source code, build files, and engineering documentation specific to that Axiomtek platform.
-
-
-| Product | QNX SDP Version | Branch |
-|:---:|:---:|:---:|
-| **IPC920** | 8.0.5 | `ipc920` |
-| **MANO566** | 8.0.5 | `mano566` |
-| **MANO560** | 8.0.3 | `mano560` |
-| **ICO330** | 8.0.3 | `ico330` |
-
-
-### Documentation
-
-Each product branch contains a `docs/` directory with platform-specific engineering documentation, including:
-
-- **BSP Build Guide** - BSP setup, source download, build, and deployment instructions.
-- **Validation Guide** - Hardware and functional test procedures for the platform.
-
-
-This structure keeps the **BSP source code** and **engineering documentation** organized within 
-each product branch, while allowing each product to be maintained independently.
-
-
-
-<p align="right">
-  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
-</p>
 
 ---
 
 
 ## Understanding QNX Deployment & Licensing (Prerequisites)
+
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
 
 Before building or deploying a QNX BSP, it is important to understand the distinction 
 between the **Axiomtek BSP source code** and the **QNX Software Development 
@@ -332,9 +358,13 @@ of QNX SDP 8.0**:
 
 
 
-
-
 ### Recommended Evaluation Approach
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
 
 Engineers who want to evaluate QNX on an Axiomtek platform can use the **QNX 30-day
 evaluation SDP** together with the Axiomtek BSP source provided in this repository.
@@ -376,6 +406,12 @@ QNX licensing framework.
 
 
 ## Step-by-Step Guide: From BSP Source Code to Hardware Validation
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
 
 The repository provides a structured workflow for bringing up and validating QNX on **Axiomtek industrial platforms**.
 
@@ -424,92 +460,18 @@ The process is organized into the following stages:
 
 
 
-
-
-### Product Branches
-
-- [**ipc920**](../../tree/ipc920) - QNX SDP 8.0.5
-- [**mano566**](../../tree/mano566) - QNX SDP 8.0.5
-- [**mano560**](../../tree/mano560) - QNX SDP 8.0.3
-- [**ico330**](../../tree/ico330) - QNX SDP 8.0.3
-
-
-
-
-> **Important:** The exact build and deployment procedure is platform-specific. Always 
-  follow the BSP documentation for the target Axiomtek model and QNX SDP version.
-
-
-
-<p align="right">
-  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
-</p>
-
-
-
-### Platform-Specific Guides
-
-Detailed build and validation procedures are maintained separately for each 
-supported product branch.
-
-
-For example:
-
-
-```text
-ipc920/
-+-- README.md
-+-- LICENSE.md
-+-- src/
-+-- prebuilt/
-+-- install/
-+-- images/
-+-- binary_files_with_symbols/
-+-- Makefile
-+-- manifest
-+-- source.xml
-+-- docs/
-    +-- bsp-build-qnx-8.0.5-ipc920.md
-    +-- validation-qnx-8.0.5-ipc920.md
-```
-
-The **BSP Build Guide** covers the complete process from setting up the QNX 
-development environment to building and deploying the platform-specific boot 
-image.
-
-The **Validation Guide** covers hardware functional testing and provides practical 
-information about supported interfaces, configuration requirements, known limitations, 
-and troubleshooting considerations.
-
-Platform-specific build and validation guides are available in the docs/ directory
-of each product branch.
-
-
-
-<p align="right">
-  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
-</p>
-
-
-
-### Product Documentation
-
-Select the appropriate product branch to access its BSP build and validation guides:
-
-- [**IPC920 Documentation**](../../tree/ipc920/docs/)
-- [**MANO566 Documentation**](../../tree/mano566/docs/)
-- [**MANO560 Documentation**](../../tree/mano560/docs/)
-- [**ICO330 Documentation**](../../tree/ico330/docs/)
-
-
-<p align="right">
-  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
-</p>
-
 ---
 
 
 ## Ensuring Reliability: Hardware & I/O Validation
+
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
 
 A QNX BSP provides the foundation for running QNX on an industrial platform. 
 However, reliable deployment also requires thorough validation of the hardware 
@@ -549,6 +511,14 @@ Depending on the platform, validation may include:
 
 ### From BSP Bring-Up to Hardware Validation
 
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
+
 Hardware validation helps identify issues that may not be visible during a simple 
 system boot or basic functional test. The validation documentation provides 
 engineers with practical information about **supported interfaces, configuration 
@@ -568,8 +538,14 @@ Select the appropriate product branch to access its hardware validation guide:
 
 - [**IPC920 Validation Guide**](../../tree/ipc920/docs/validation-qnx-8.0.5-ipc920.md)
 - [**MANO566 Validation Guide**](../../tree/mano566/docs/validation-qnx-8.0.5-mano566.md)
+- [**SHB160 Validation Guide**](../../tree/shb160/docs/validation-qnx-8.0.5-shb160.md)
 - [**MANO560 Validation Guide**](../../tree/mano560/docs/validation-qnx-8.0.3-mano560.md)
 - [**ICO330 Validation Guide**](../../tree/ico330/docs/validation-qnx-8.0.3-ico330.md)
+- [**IMB540 Validation Guide**](../../tree/imb540/docs/validation-qnx-8.0.3-imb540.md)
+- [**PICO338 Validation Guide**](../../tree/pico338/docs/validation-qnx-8.0.3-pico338.md)
+- [**KIWI330 Validation Guide**](../../tree/kiwi330/docs/validation-qnx-8.0.3-kiwi330.md)
+- [**CAPA322 Validation Guide**](../../tree/capa322/docs/validation-qnx-8.0.0-capa322.md)
+
 
 <p align="right">
   <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
@@ -578,6 +554,14 @@ Select the appropriate product branch to access its hardware validation guide:
 ---
 
 ## Scaling Up: Product Line & Customization Support
+
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
 
 A standard QNX BSP provides a foundation for deploying QNX on a supported Axiomtek 
 platform. However, some industrial applications may require **custom I/O, 
@@ -603,7 +587,6 @@ can provide engineering services such as:
 
 
 
-
 <p align="right">
   <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
 </p>
@@ -611,6 +594,15 @@ can provide engineering services such as:
 
 
 ### From Evaluation to Customized Deployment
+
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
+
 
 The combination of Axiomtek's industrial hardware portfolio, QNX BSP expertise, 
 and DES engineering capabilities provides a path from **initial platform 
@@ -633,6 +625,13 @@ for hardware, drivers, BSP customization, and system integration.
 ---
 
 ## Get Started with QNX on Axiomtek Platforms
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
 
 Deploying QNX on Axiomtek industrial hardware does not have to start from scratch. 
 This repository provides **QNX BSP source code, build and deployment guides, and 
@@ -659,11 +658,19 @@ development on Axiomtek industrial platforms.
 
 ### Next Steps
 
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
+
 Ready to evaluate QNX on Axiomtek hardware?
 
 1. **Choose a supported platform**  
-   Review the [**Product Branches**](#product-branches) and select the Axiomtek 
-   platform and QNX SDP version that match your requirements.
+   Review the [**Supported Axiomtek Platforms**](#supported-axiomtek-platforms) and select the Axiomtek 
+   platform and corresponding QNX SDP version that meet your requirements.
 
 2. **Get the BSP source code**  
    Check out the corresponding product branch to obtain the BSP source code and 
@@ -686,16 +693,29 @@ Ready to evaluate QNX on Axiomtek hardware?
    specialized QNX deployment requirements, contact the Axiomtek **Design & 
    Engineering Services (DES)** team.
 
-> **Start with the BSP. Build with QNX. Validate the platform. Develop your 
-> application.**
+
+
+
+> **Start with the BSP. Build with QNX. Validate the platform. Develop your application.**
+
+
 
 <p align="right">
   <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
 </p>
 
+
 ---
 
-# License
+## License
+
+
+
+<p align="right">
+  <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
+</p>
+
+
 
 Copyright (c) 2026 Axiomtek Inc.
 
@@ -721,4 +741,4 @@ or deployment.
   <a href="#qnx-on-axiomtek-industrial-pcs">Back to Top</a>
 </p>
 
----
+
