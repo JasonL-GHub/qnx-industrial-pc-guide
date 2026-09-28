@@ -1,0 +1,18 @@
+<!-- Unless otherwise specified, values/attributes are free-form strings -->
+    <!-- type is currently either BSP or SourceOnly -->
+<sourcePackage type="BSP" id="hw.x86_64">
+    <title>Generic x86_64 (64-bit)</title>
+    <release>BSP_x86_64_br-hw-rel_be-800-BN50</release>
+    <license>QDL and Apache II</license>
+    <startup>startup-x86</startup>
+    <description>This board support package (BSP) is for generic x86_64 (64-bit) boards. This BSP contains prebuilt binaries and buildfiles to boot your board with the QNX Muon RTOS. In addition, this BSP provides source code for various drivers that you can build. For documentation to use this BSP, download the user's guide.</description>
+    <vendor>BlackBerry Limited</vendor>
+    <qnxTargetVersion>SDP8.0</qnxTargetVersion>
+    <qnxTargetCPU variant="x86_64">x86_64</qnxTargetCPU>
+    <!-- type is currently only import, will be extended in the future. -->
+    <bsp type="import">
+        <import id="x86_64">images/generic-bios/x86_64-generic-bios.build</import>
+        <import id="x86_64">images/generic-uefi/x86_64-generic-uefi.build</import>
+        <import id="x86_64">images/elkhart-lake/x86_64-ehl-crb-uefi.build</import>
+    </bsp>
+</sourcePackage>
